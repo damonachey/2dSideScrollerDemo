@@ -9,7 +9,7 @@ var keys = {};
 var pressedKeys = []; // Track all currently pressed keys for display
 var showBoundingBoxes = false; // Global bounding box toggle
 var currentDirection = null; // Track the currently active movement direction
-var showHelp = false; // Track help overlay visibility
+var showHelp = true; // Track help overlay visibility (start with help shown)
 
 // Handle keyboard events
 window.addEventListener('keydown', function(e) {

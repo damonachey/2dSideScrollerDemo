@@ -3,7 +3,7 @@ var statistics = {
     lastFpsTime: 0,
     currentFps: 0,
     currentKey: '',
-    visible: true,
+    visible: false,
 
     update: function(deltaTime) {
         this.frameCount++;
