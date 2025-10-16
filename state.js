@@ -11,7 +11,7 @@ var state = {
     gravity: 1800,   // Gravity acceleration (pixels per second squared)
 
     update: function(deltaTime) {
-        if (this.player.z < -10000) {
+        if (this.player.z < -5000) {
             // Reset player if they fall too far
             this.player.x = 0;
             this.player.y = 0;
