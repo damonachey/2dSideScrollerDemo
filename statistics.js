@@ -33,6 +33,7 @@ var statistics = {
         ctx.fillText('FPS: ' + this.currentFps, 10, 30);
         ctx.fillText('Key: ' + this.currentKey, 10, 60);
         ctx.fillText('Pos: ' + Math.round(state.player.x) + ',' + Math.round(state.player.y + state.player.z), 10, 90);
+        ctx.fillText('VelocityZ: ' + Math.round(state.player.velocityZ), 10, 150);
 
         // Calculate grid box based on player center (player is 32x48)
         var playerCenterX = state.player.x + player.width / 2;

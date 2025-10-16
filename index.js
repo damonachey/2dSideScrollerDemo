@@ -36,5 +36,10 @@ function gameLoop(currentTime) {
     requestAnimationFrame(gameLoop);
 }
 
-// Start the game loop
-requestAnimationFrame(gameLoop);
+// Wait for world to load before starting the game loop
+world.loadMap().then(function() {
+    console.log('World loaded, starting game loop');
+    requestAnimationFrame(gameLoop);
+}).catch(function(error) {
+    console.error('Failed to load world:', error);
+});
