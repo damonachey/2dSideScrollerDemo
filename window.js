@@ -74,6 +74,12 @@ window.addEventListener('keydown', function(e) {
         showBoundingBoxes = !showBoundingBoxes;
     }
     
+    // Handle CTRL key to jump
+    if (e.key === 'Control') {
+        e.preventDefault();
+        state.jump();
+    }
+    
     // Handle '?' key to toggle help overlay
     if (e.key === '?') {
         e.preventDefault();
@@ -166,6 +172,7 @@ var help = {
             '',
             'Movement:',
             '  ←→    Left/Right Arrow Keys - Move player',
+            '  CTRL  Jump',
             '',
             'Display Options:',
             '  CTRL+S  Toggle statistics panel',
